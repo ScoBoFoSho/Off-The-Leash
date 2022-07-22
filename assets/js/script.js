@@ -1,10 +1,8 @@
 // Map Object created!
-const parkMap = L.map("parkMap").setView([0, 0], 1);
+var parkMap = L.map("parkMap").setView([38.18, -95.34], 4);
+// uses css link to add sytled tiles to object named "parkMap"
+L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+  maxZoom: 16,
+  attribution: "© OpenStreetMap",
+}).addTo(parkMap);
 
-const attribution =
-  "&coppy; <a href='https://www.openstreetmap.org/copyright'>OpenStreetMap</a> contributors";
-const tileUrl = "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png";
-const tiles = L.tileLayer(tileUrl, { attribution });
-tiles.add(parkMap);
-
-const api_url = "https://api.wheretheiss.at/v1/satellites/25544";
