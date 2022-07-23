@@ -1,6 +1,10 @@
+// I have created a variable for city, was thinking we can reuse this variable
+// for the other API calls, I have tried to keep everything in one function so
+// adding code below wont be an issue
+
 
 let weather = {
-    apiKey: "f2da475e3f33a76106dd40ea31ab6cfa", //API goes here
+    apiKey: "f2da475e3f33a76106dd40ea31ab6cfa",
     fetchWeather: function (city) {
         fetch(
             "https://api.openweathermap.org/data/2.5/weather?q=" +
@@ -52,4 +56,6 @@ document
 
 weather.fetchWeather("Miami");
 
-//API + city + whatever other parameters needed for other API
+//Add other API with city + whatever other parameters needed
+//using this as city variable
+//document.querySelector(".city").innerText
