@@ -66,12 +66,14 @@
     <!-- I have put everything in a div so any additional code can be 
   placed after this div tag for further development -->
     <section>
-      <form>
-        <input /><button>Search Zip Code</button>
-        <!-- form, then a button, then find conversion (zip to lat and long) -->
-        <!-- label input button -->
-      </form>
+      <div id="Map-Container">
+        <form>
+          <input /><button>Search Zip Code</button>
+          <!-- form, then a button, then find conversion (zip to lat and long) -->
+          <!-- label input button -->
+          <div id="parkMap"></div>
+        </form>
+      </div>
     </section>
-    <div id="parkMap"></div>
   </body>
 </html>

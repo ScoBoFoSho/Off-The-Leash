@@ -62,7 +62,8 @@ weather.fetchWeather("Miami");
 //document.querySelector(".search-bar").value
 
 // Map Object created!
-var parkMap = L.map("parkMap").setView([38.18, -95.34], 4);
+
+var parkMap = L.map("parkMap").setView([38.18, -95.34], 3.75);
 // uses css link to add sytled tiles to object named "parkMap"
 L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
   maxZoom: 16,

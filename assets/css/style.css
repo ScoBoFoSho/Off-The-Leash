@@ -93,4 +93,14 @@ h1.temp {
 /* Links the Map to the Page */
 #parkMap {
   height: 480px;
+  width: 600px;
+}
+
+section #Map-Container {
+  display: flex;
+  justify-content: left;
+  align-items: normal;
+  width: 100%;
+  height: 100%;
+  padding-left: 250px;
 }
