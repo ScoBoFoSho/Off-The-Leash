@@ -1,2 +1,5 @@
 # Off-The-Leash
-This is Cisco!
+
+## Map API utilized is Leaflet; assisted by OpenStreetMap (for styling)
+
+![Leaflet API Logo](./assets/images/LeafletAPI.png)
