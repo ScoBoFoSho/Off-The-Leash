@@ -21,6 +21,7 @@ let weather = {
       .then((data) => this.displayWeather(data));
   },
   displayWeather: function (data) {
+    console.log(data);
     const { name } = data;
     const { icon, description } = data.weather[0];
     const { temp, humidity } = data.main;
@@ -36,7 +37,7 @@ let weather = {
       "Wind speed: " + speed + " km/h";
     document.querySelector(".weather").classList.remove("loading");
     console.log("This works!");
-    // Map logic will go HERE
+    displayMapLocation(data.coord.lat, data.coord.lon);
   },
   search: function () {
     this.fetchWeather(document.querySelector(".search-bar").value);
@@ -62,12 +63,20 @@ weather.fetchWeather("Miami");
 
 //If you want to use the same city that is typed into the search bar for the other api use:,
 //document.querySelector(".search-bar").value
+var parkMap = L.map("parkMap");
 
 // Map Object created!
-
-var parkMap = L.map("parkMap").setView([38.18, -95.34], 3.75);
-// uses css link to add sytled tiles to object named "parkMap"
-L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
-  maxZoom: 16,
-  attribution: "© OpenStreetMap",
-}).addTo(parkMap);
+function displayMapLocation(lat, lon) {
+  parkMap.setView([lat, lon], 10);
+  // uses css link to add sytled tiles to object named "parkMap"
+  L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+    maxZoom: 16,
+    attribution: "© OpenStreetMap",
+  }).addTo(parkMap);
+  var circle = L.circle([lat, lon], {
+    color: "orange",
+    fillColor: "#f03",
+    fillOpacity: 0.5,
+    radius: 1500,
+  }).addTo(parkMap);
+}
