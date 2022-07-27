@@ -3,9 +3,9 @@ I have it aligned left for now, up for suggestive changes */
 
 body {
     display: flex;
-    justify-content:left;
-    align-items: normal;
-    height: 50vh;
+    justify-content:center;
+    align-items: center;
+    height: 100vh;
     margin: 0;
     font-family: 'Open Sans', sans-serif;
     background: #222;

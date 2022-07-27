@@ -60,5 +60,5 @@ weather.fetchWeather("Miami");
 //using this as city variable
 
 //If you want to use the same city that is typed into the search bar for the other api use:,
-//document.querySelector(".search-bar").value
+//document.querySelector(".search-bar").value, set this value as a variable to use in your api
 
