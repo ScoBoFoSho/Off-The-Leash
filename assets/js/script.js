@@ -36,7 +36,7 @@ let weather = {
     document.querySelector(".wind").innerText =
       "Wind speed: " + speed + " km/h";
     document.querySelector(".weather").classList.remove("loading");
-    console.log("This works!");
+
     displayMapLocation(data.coord.lat, data.coord.lon);
   },
   search: function () {

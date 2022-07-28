@@ -6,4 +6,8 @@ Application includes a weather widget so that the user can see the current weath
 <br><br>
 Application includes a map widget so that the useer can see a visual of the area that weather is being detected for directions to the dog park
 <img width =1706 alt="Screen Shot of Mapping API" src="https://cdn.discordapp.com/attachments/999093865204166740/1000836567801282631/unknown.png">
+<br><br>
+Live URL: (https://scobofosho.github.io/Off-The-Leash/)
+<br>
+GitHub Origin Repo: (https://github.com/ScoBoFoSho/Off-The-Leash)
 
